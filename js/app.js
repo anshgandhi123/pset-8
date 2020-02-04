@@ -13,6 +13,8 @@ const winningConditions = [
 let board;
 let turn;
 let win;
+let xWinCount = 0;
+let oWinCount = 0;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
@@ -36,7 +38,6 @@ function render() {
   board.forEach(function(mark, index) {
     squares[index].textContent = mark;
   });
-
   message.textContent =
     win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
 }
