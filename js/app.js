@@ -29,9 +29,26 @@ function init() {
     "", "", "",
     "", "", ""
   ];
-  turn = "X";
+  turn = first();
   win = null;
   render();
+}
+
+function first() {
+  do {
+    var a = window.prompt("Who goes first?")
+    if (a == null) {
+      break;
+    }
+
+    a = String(a)
+    a = a.toUpperCase()
+    if (a != "X" && a != "x" && a != "O" && a != "o") {
+      window.alert("Invalid value. Please type either X or O.")
+    }
+  } while (a != "X" && a != "x" && a != "O" && a != "o" && a != null)
+
+  return a
 }
 
 function render() {
