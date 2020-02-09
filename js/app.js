@@ -92,8 +92,8 @@ function getWinner() {
       if (winner === "O") {
         oWinCount++;
         document.getElementById("secondList").innerHTML = oWinCount;
-      }
+      } 
   }
 });
   return winner ? winner : board.includes("") ? null : "T";
-} 
+}
