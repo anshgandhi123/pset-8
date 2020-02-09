@@ -38,9 +38,8 @@ function first() {
   do {
     var a = window.prompt("Who goes first?")
     if (a == null) {
-      break;
+      // on purpose
     }
-
     a = String(a)
     a = a.toUpperCase()
     if (a != "X" && a != "x" && a != "O" && a != "o") {
@@ -85,8 +84,8 @@ function getWinner() {
       board[condition[1]] === board[condition[2]]
     ) {
       winner = board[condition[0]];
-    }
-  });
+  }
+});
 
   return winner ? winner : board.includes("") ? null : "T";
 }
