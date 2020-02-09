@@ -74,7 +74,7 @@ function takeTurn(e) {
       render();
     }
   }
-} 
+}
 
 function getWinner() {
   let winner = null;
@@ -96,4 +96,4 @@ function getWinner() {
   }
 });
   return winner ? winner : board.includes("") ? null : "T";
-}
+} 

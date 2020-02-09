@@ -20,7 +20,7 @@ h2 {
   font-weight: lighter;
   margin: 2%;
 }
- 
+
 .count {
   color: blue;
   padding-bottom: 1px;
@@ -86,4 +86,4 @@ h2 {
  #tieCount {
    list-style-type: none;
    float: right;
- }
+ } 
