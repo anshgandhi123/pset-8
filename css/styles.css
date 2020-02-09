@@ -17,7 +17,7 @@ h2 {
 }
 
 .container {
-  display: flex;           
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -64,3 +64,16 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+#xWinCount {
+   list-style-type: none;
+   float: left;
+ }
+#oWinCount {
+   list-style-type: none;
+   float: right;
+ }
+ #tieCount {
+   list-style-type: none;
+   float: right;
+ }
