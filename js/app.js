@@ -84,6 +84,14 @@ function getWinner() {
       board[condition[1]] === board[condition[2]]
     ) {
       winner = board[condition[0]];
+      if (winner === "X") {
+        xWinCount++;
+        document.getElementById("list").innerHTML = xWinCount;
+      }
+      if (winner == "O") {
+        oWinCount++;
+        document.getElementById("secondList").innerHTML = oWinCount;
+      }
   }
 });
 
