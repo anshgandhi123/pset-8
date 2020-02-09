@@ -1,6 +1,7 @@
 * {
   background-color: gray;
 }
+
 body {
   text-align: center;
   font-family: "Roboto", monospace;
@@ -19,6 +20,10 @@ h2 {
   margin: 2%;
 }
 
+.count {
+  color: blue;
+  padding-bottom: 1px;
+}
 .container {
   display: flex;
   justify-content: center;
