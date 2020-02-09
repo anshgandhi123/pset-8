@@ -47,7 +47,6 @@ function first() {
       window.alert("Invalid value. Please type either X or O.")
     }
   } while (a != "X" && a != "x" && a != "O" && a != "o" && a != null)
-
   return a
 }
 
@@ -64,7 +63,6 @@ function takeTurn(e) {
     let index = squares.findIndex(function(square) {
       return square === e.target;
     });
-
     if (board[index] === "") {
       board[index] = turn;
       turn = turn === "X" ? "O" : "X";
