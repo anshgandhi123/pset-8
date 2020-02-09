@@ -15,6 +15,7 @@ let turn;
 let win;
 let xWinCount = 0;
 let oWinCount = 0;
+let tieCount = 0;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
@@ -68,7 +69,10 @@ function takeTurn(e) {
       board[index] = turn;
       turn = turn === "X" ? "O" : "X";
       win = getWinner();
-
+      if (win === "T") {
+        tieCount++;
+        document.getElementById("thirdList").innerHTML = tieCount;
+      }
       render();
     }
   }
@@ -88,7 +92,7 @@ function getWinner() {
         xWinCount++;
         document.getElementById("list").innerHTML = xWinCount;
       }
-      if (winner == "O") {
+      if (winner === "O") {
         oWinCount++;
         document.getElementById("secondList").innerHTML = oWinCount;
       }
