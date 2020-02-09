@@ -74,7 +74,7 @@ function takeTurn(e) {
       render();
     }
   }
-}
+} 
 
 function getWinner() {
   let winner = null;
@@ -93,7 +93,7 @@ function getWinner() {
         oWinCount++;
         document.getElementById("secondList").innerHTML = oWinCount;
       }
-  } 
+  }
 });
   return winner ? winner : board.includes("") ? null : "T";
 }
